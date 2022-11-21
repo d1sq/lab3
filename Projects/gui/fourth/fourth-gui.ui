@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1432</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="fun_label">
+          <property name="text">
+           <string>Функция:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="fun_cmb">
+          <item>
+           <property name="text">
+            <string>sin(x)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>x^2</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="error_label">
+          <property name="text">
+           <string>Точность:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QDoubleSpinBox" name="error_edit">
+          <property name="decimals">
+           <number>4</number>
+          </property>
+          <property name="singleStep">
+           <double>0.001000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.010000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="algorithm_label">
+          <property name="text">
+           <string>Алгоритм:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QRadioButton" name="dihotom_rb">
+               <property name="text">
+                <string>Дихотомия</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="newton_rb">
+             <property name="text">
+              <string>Ньютона</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QRadioButton" name="secand_rb">
+             <property name="text">
+              <string>Секущих</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="first_param_label">
+          <property name="text">
+           <string>Левая граница:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QDoubleSpinBox" name="first_param_edit">
+          <property name="minimum">
+           <double>-99.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="second_param_label">
+          <property name="text">
+           <string>Правая граница:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QDoubleSpinBox" name="second_param_edit">
+          <property name="minimum">
+           <double>-99.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Поиск</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="interations_label">
+          <property name="text">
+           <string>Итерации:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QListWidget" name="listWidget"/>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="count_iter_label">
+          <property name="text">
+           <string>Кол-во итераций:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="QLineEdit" name="count_iter_edit">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="root_label">
+          <property name="text">
+           <string>Корень:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="QLineEdit" name="root_edit"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="a_label">
+          <property name="text">
+           <string>a:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="b_label">
+          <property name="text">
+           <string>b:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDoubleSpinBox" name="a_edit">
+          <property name="minimum">
+           <double>-99.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QDoubleSpinBox" name="b_edit">
+          <property name="minimum">
+           <double>-99.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>3.140000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>Нарисовать</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QChartView" name="graphicsView">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts/QtCharts</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

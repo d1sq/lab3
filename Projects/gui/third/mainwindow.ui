@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>759</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>Входные параметры:</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <layout class="QFormLayout" name="formLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="function_label">
+               <property name="text">
+                <string>Функция:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="function_cmb">
+               <item>
+                <property name="text">
+                 <string>sin(x)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>x^2</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="a_label">
+               <property name="text">
+                <string>a:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QDoubleSpinBox" name="a_edit">
+               <property name="minimum">
+                <double>-100.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.100000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="b_label">
+               <property name="text">
+                <string>b:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QDoubleSpinBox" name="b_edit">
+               <property name="singleStep">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="value">
+                <double>5.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QPushButton" name="pushButton">
+               <property name="text">
+                <string>Расчитать</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="n_label">
+               <property name="text">
+                <string>N</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QSpinBox" name="n_edit">
+               <property name="maximum">
+                <number>10000</number>
+               </property>
+               <property name="value">
+                <number>99</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="1">
+          <widget class="QTableWidget" name="tableWidget">
+           <row>
+            <property name="text">
+             <string>Прямоугольников</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Трапеций</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Метод</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Ошибка</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
